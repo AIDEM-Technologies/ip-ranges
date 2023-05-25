@@ -4,7 +4,7 @@ use log::*;
 
 mod tests;
 
-#[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]
+#[derive(Clone, Debug, serde::Serialize, serde::Deserialize, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub struct IpRanges {
     firsts: Vec<u32>,
     lasts: Vec<u32>,
